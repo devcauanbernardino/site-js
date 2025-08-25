@@ -6,33 +6,68 @@
     <title>JavaScript</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
+
 <body>
-    <nav class="navbar bg-warning">
-        <div class="container-fluid justify-content-around fixed-top mt-3">
+    <nav class="navbar bg-transparent fixed-top">
+        <div class="container-fluid d-flex justify-content-around align-items-md-center mt-3">
             <a class="navbar-brand" href="#">
-                <img src="../assets/images/javascript.svg" alt="Logo" width="30" height="24"
-                    class="d-inline-block align-text-top">
-                JavaScript
+                <img src="../assets/images/javascript.svg" alt="Logo" width="30" height="30"
+                    class="d-inline-block align-content-center fs-6">
             </a>
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link fs-6" aria-current="page" href="#">Home</a>
+                    <a class="nav-link fs-5" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fs-6" href="#">Sobre</a>
+                    <a class="nav-link fs-5" href="#">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fs-6" href="#">Contato</a>
+                    <a class="nav-link fs-5" href="#">Contato</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <section>
-        
+    <section class="container">
+        <div class="teste">
+            <h1>O que é JavaScript?</h1>
+            <p>JavaScript (JS) é uma linguagem de programação de alto nível, interpretada e orientada a objetos baseada
+                em
+                protótipos, criada inicialmente para rodar no navegador e permitir interatividade em páginas web.</p>
+        </div>
+        <div class="d-flex justify-content-center position-absolute bottom-0 start-50 translate-middle-x mb-4">
+            <a href="#next" class="text-black text-decoration-none">
+                <i class="bi bi-chevron-compact-down fs-1 mt-3"></i>
+            </a>
+        </div>
     </section>
 
-    
+    <section id="next" class="vh-100 bg-transparent d-flex justify-content-center align-items-center position-relative z-1 flex-column">
+        <h2>História</h2>
+        <p>JavaScript foi criado em 1995 por <strong>Brendan Eich</strong> na Netscape para tornar as páginas web mais
+            interativas.
+            Inicialmente chamado de <em>Mocha</em> e depois <em>LiveScript</em>, recebeu o nome
+            <strong>JavaScript</strong>
+            para aproveitar a popularidade do Java, embora as duas linguagens sejam diferentes.
+        </p>
+        <p>Em 1997, a <strong>ECMA International</strong> padronizou a linguagem como <strong>ECMAScript</strong>,
+            garantindo compatibilidade entre navegadores.
+            Nos anos 2000, bibliotecas como <strong>jQuery</strong> facilitaram o uso da linguagem e a manipulação do
+            DOM.</p>
+        <p>Em 2009, o <strong>Node.js</strong> permitiu usar JavaScript no lado do servidor, e em 2015 o
+            <strong>ECMAScript 6</strong> trouxe recursos modernos como <code>let</code>, <code>const</code>, arrow
+            functions, classes e promises, tornando a linguagem mais poderosa.
+        </p>
+        <p> Hoje, JavaScript é a linguagem mais usada na web, base de frameworks como <strong>React</strong>,
+            <strong>Angular</strong> e <strong>Vue</strong>, e também utilizada em back-end, aplicativos móveis, jogos e
+            até soluções de inteligência artificial.</p>
+    </section>
+
     <!-- particles.js container -->
     <div id="particles-js"></div> <!-- stats - count particles -->
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->

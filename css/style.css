@@ -166,11 +166,17 @@ font-family: "Bebas Neue", sans-serif;
     max-width: 1100px;
 }
 .timeline::before{
-    content:""; position:absolute; inset:0 auto 0 50%; width:2px; background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.295), transparent);
+    content:"";
+    position:absolute; 
+    inset:0 auto 0 50%;
+    width:2px;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.295), transparent);
 }
 .tl-item{
     position:relative;
-    display:grid; grid-template-columns: 1fr; gap:1rem;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:1rem;
     margin: 0 0 2.5rem 0;
 }
 @media(min-width: 992px){
@@ -185,13 +191,16 @@ font-family: "Bebas Neue", sans-serif;
 }
 .tl-dot{
     position:absolute; left: calc(50% - .55rem); top: .75rem; z-index:2;
-    width:1.1rem; height:1.1rem; border-radius:50%;
-    background: radial-gradient(circle at 30% 30%, #fff 0 20%, #c7a6ff 55%, var(--roxo));
+    width:1.1rem;
+    height:1.1rem; 
+    border-radius:50%;
     box-shadow: 1px solid black;
 }
 .tl-card{
-    position:relative; border:1px solid rgba(255,255,255,.08);
-    background: rgba(255,255,255,.03);
+    position:relative; 
+    border:1px solid rgba(255,255,255,.08);
+    background: rgba(0, 0, 0, 0.61);
+    color: white;
     backdrop-filter: blur(6px);
     border-radius: 1.25rem;
     padding:1.25rem; padding-left:1.1rem;
@@ -204,7 +213,6 @@ font-family: "Bebas Neue", sans-serif;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.274);
 }
 .badge-year{
-    background: linear-gradient(90deg, var(--roxo-escuro), var(--roxo));
     border: none;
 }
 .tag{

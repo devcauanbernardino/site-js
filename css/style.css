@@ -149,6 +149,7 @@ position: absolute;
 overflow: hidden;
 padding-top: 7rem; 
 padding-bottom: 7rem;
+height: 140vh;
 }
 .historia-title{
 letter-spacing:.5px;

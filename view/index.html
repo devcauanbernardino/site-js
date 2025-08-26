@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,31 +42,86 @@
                 protótipos, criada inicialmente para rodar no navegador e permitir interatividade em páginas web.</p>
         </div>
         <div class="d-flex justify-content-center position-absolute bottom-0 start-50 translate-middle-x mb-4">
-            <a href="#next" class="text-black text-decoration-none">
+            <a href="#historia" class="text-black text-decoration-none">
                 <i class="bi bi-chevron-compact-down fs-1 mt-3"></i>
             </a>
         </div>
     </section>
 
-    <section id="next" class="vh-100 bg-transparent d-flex justify-content-center align-items-center position-relative z-1 flex-column">
-        <h2>História</h2>
-        <p>JavaScript foi criado em 1995 por <strong>Brendan Eich</strong> na Netscape para tornar as páginas web mais
-            interativas.
-            Inicialmente chamado de <em>Mocha</em> e depois <em>LiveScript</em>, recebeu o nome
-            <strong>JavaScript</strong>
-            para aproveitar a popularidade do Java, embora as duas linguagens sejam diferentes.
-        </p>
-        <p>Em 1997, a <strong>ECMA International</strong> padronizou a linguagem como <strong>ECMAScript</strong>,
-            garantindo compatibilidade entre navegadores.
-            Nos anos 2000, bibliotecas como <strong>jQuery</strong> facilitaram o uso da linguagem e a manipulação do
-            DOM.</p>
-        <p>Em 2009, o <strong>Node.js</strong> permitiu usar JavaScript no lado do servidor, e em 2015 o
-            <strong>ECMAScript 6</strong> trouxe recursos modernos como <code>let</code>, <code>const</code>, arrow
-            functions, classes e promises, tornando a linguagem mais poderosa.
-        </p>
-        <p> Hoje, JavaScript é a linguagem mais usada na web, base de frameworks como <strong>React</strong>,
-            <strong>Angular</strong> e <strong>Vue</strong>, e também utilizada em back-end, aplicativos móveis, jogos e
-            até soluções de inteligência artificial.</p>
+
+    <section id="historia" class="bg-transparent d-flex justify-content-center align-items-center position-relative z-1 flex-column">
+        <div class="container position-relative">
+            <div class="text-center mb-4">
+                <span class="tag mb-2">Linha do Tempo</span>
+                <h2 class="display-5 fw-bold historia-title">A História do JavaScript</h2>
+                <p class="lead lead-sub">Dos primeiros passos no navegador à era moderna do <span
+                        class="code-mark">ECMAScript</span>.</p>
+            </div>
+            <!-- TIMELINE WRAPPER -->
+            <div class="timeline">
+                <!-- ITEM 1 -->
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <div class="tl-year order-2 order-lg-1">
+                        <span class="badge rounded-pill badge-year text-bg-dark">1995</span>
+                    </div>
+                    <article class="tl-card order-1 order-lg-2">
+                        <h5 class="mb-1">Nasce o JavaScript</h5>
+                        <p class="mb-2">Brendan Eich cria a linguagem em apenas 10 dias na Netscape. Inicialmente
+                            chamada de <span class="code-mark">Mocha</span>, depois <span
+                                class="code-mark">LiveScript</span>, e finalmente <em>JavaScript</em>.</p>
+                    </article>
+                </div>
+                <!-- ITEM 2 -->
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <div class="tl-year order-2 order-lg-1">
+                        <span class="badge rounded-pill badge-year text-bg-dark">1997–1999</span>
+                    </div>
+                    <article class="tl-card order-1 order-lg-2">
+                        <h5 class="mb-1">Padronização ECMAScript</h5>
+                        <p class="mb-2">O ECMA aprova a especificação <span class="code-mark">ECMAScript</span>.
+                            Navegadores passam a seguir um padrão, reduzindo incompatibilidades.</p>
+                    </article>
+                </div>
+                <!-- ITEM 3 -->
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <div class="tl-year order-2 order-lg-1">
+                        <span class="badge rounded-pill badge-year text-bg-dark">2005–2010</span>
+                    </div>
+                    <article class="tl-card order-1 order-lg-2">
+                        <h5 class="mb-1">Ajax, V8 e a Web Dinâmica</h5>
+                        <p class="mb-2">Chegam técnicas assíncronas (<span class="code-mark">Ajax</span>) e motores
+                            rápidos como <span class="code-mark">V8</span>, levando JS a outro nível de performance.</p>
+                    </article>
+                </div>
+                <!-- ITEM 4 -->
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <div class="tl-year order-2 order-lg-1">
+                        <span class="badge rounded-pill badge-year text-bg-dark">2015</span>
+                    </div>
+                    <article class="tl-card order-1 order-lg-2">
+                        <h5 class="mb-1">ES6/ES2015 e Além</h5>
+                        <p class="mb-2">Surgem <span class="code-mark">let/const</span>, <span
+                                class="code-mark">class</span>, <span class="code-mark">arrow functions</span>, módulos,
+                            <span class="code-mark">Promises</span> e muito mais.</p>
+                    </article>
+                </div>
+                <!-- ITEM 5 -->
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <div class="tl-year order-2 order-lg-1">
+                        <span class="badge rounded-pill badge-year text-bg-dark">Hoje</span>
+                    </div>
+                    <article class="tl-card order-1 order-lg-2">
+                        <h5 class="mb-1">JS em Todo Lugar</h5>
+                        <p class="mb-2">Front‑end, back‑end, mobile, desktop e IoT. O ecossistema cresce com <span
+                                class="code-mark">Node.js</span>, bundlers e frameworks modernos.</p>
+                    </article>
+                </div>
+            </div>
     </section>
 
     <!-- particles.js container -->

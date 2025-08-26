@@ -72,7 +72,7 @@ canvas {
 /* ---- Navegação ---- */
 nav {
     position: relative;
-    z-index: 2; /* Garante que fica sobre as partículas */
+    z-index: 4; /* Garante que fica sobre as partículas */
 }
 
 .nav-link {
@@ -92,7 +92,7 @@ nav {
 /* ---- Conteúdo ---- */
 .container {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,3 +140,93 @@ nav {
         transform: translateY(-5px);
     }
 }
+
+
+/*SEÇÂO HISTORIA*/
+
+#historia{
+position: absolute;
+overflow: hidden;
+padding-top: 7rem; 
+padding-bottom: 7rem;
+}
+.historia-title{
+letter-spacing:.5px;
+-webkit-background-clip:text; background-clip:text; color: transparent;
+color: #000022;
+font-family: "Bebas Neue", sans-serif;
+}
+.lead-sub{
+    color:black; opacity:.9;
+}
+/* Timeline */
+.timeline{
+    position:relative;
+    margin: 3rem auto 0;
+    max-width: 1100px;
+}
+.timeline::before{
+    content:""; position:absolute; inset:0 auto 0 50%; width:2px; background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.295), transparent);
+}
+.tl-item{
+    position:relative;
+    display:grid; grid-template-columns: 1fr; gap:1rem;
+    margin: 0 0 2.5rem 0;
+}
+@media(min-width: 992px){
+    .tl-item{grid-template-columns: 1fr 1fr;}
+    .tl-item:nth-child(even) .tl-card{grid-column:1/2}
+    .tl-item:nth-child(even) .tl-year{grid-column:2/3}
+}
+.tl-year{
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    padding: .75rem 1rem; height: 100%;
+    font-weight: 800; letter-spacing: .5px;
+}
+.tl-dot{
+    position:absolute; left: calc(50% - .55rem); top: .75rem; z-index:2;
+    width:1.1rem; height:1.1rem; border-radius:50%;
+    background: radial-gradient(circle at 30% 30%, #fff 0 20%, #c7a6ff 55%, var(--roxo));
+    box-shadow: 1px solid black;
+}
+.tl-card{
+    position:relative; border:1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.03);
+    backdrop-filter: blur(6px);
+    border-radius: 1.25rem;
+    padding:1.25rem; padding-left:1.1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.tl-card:hover{
+    transform: translateY(-4px);
+    border-color: black;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.274);
+}
+.badge-year{
+    background: linear-gradient(90deg, var(--roxo-escuro), var(--roxo));
+    border: none;
+}
+.tag{
+    display:inline-block; font-size:.8rem; padding:.35rem .6rem; border-radius:999px;
+    background: black;
+    color:white;
+    border:1px solid white;
+}
+.code-mark{
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    background: rgba(255,255,255,.06);
+    border:1px dashed rgba(255,255,255,.15);
+    padding:.15rem .35rem; border-radius:.5rem;
+}
+.accent{
+    color:#d9d2ff;
+}
+/* seta scroll */
+.scroll-down{
+    position:absolute; left:0; right:0; bottom:1.25rem; text-align:center;
+    animation: floaty 2.3s ease-in-out infinite;
+}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+.scroll-down a{ color:#e9ddff; text-decoration:none; opacity:.9 }
+.scroll-down a:hover{ opacity:1 }

@@ -239,3 +239,18 @@ font-family: "Bebas Neue", sans-serif;
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
 .scroll-down a{ color:#e9ddff; text-decoration:none; opacity:.9 }
 .scroll-down a:hover{ opacity:1 }
+
+.card-title {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.container > h2 {
+    font-family: "Bebas Neue", sans-serif;
+}
+footer {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+}

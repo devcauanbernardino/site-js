@@ -184,9 +184,6 @@ font-family: "Bebas Neue", sans-serif;
     .tl-item{grid-template-columns: 1fr 1fr;}
     .tl-item:nth-child(even) .tl-card{grid-column:1/2}
     .tl-item:nth-child(even) .tl-year{grid-column:2/3}
-    #historia {
-        height: 200vh;
-    }
 }
 .tl-year{
     display:flex; align-items:center; justify-content:center; text-align:center;
